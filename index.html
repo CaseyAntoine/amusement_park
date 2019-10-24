@@ -48,37 +48,47 @@
               <p>We have a lot of animals. Which one you would like to learn more about?</p>
               <form class="form-inline animal">
               <div class="form-group">
-                <input type="text" class="form-control input-sm animal" placeholder="Choose an animal.">
+                <select class="custom-select my-1 mr-sm-2" id="animal">
+                  <option>Choose an animal...</option>
+                  <option value="bat">Bat</option>
+                  <option value="wolf">Wolf</option>
+                  <option value="sloth">Sloth</option>
+                </select>
+                <!-- <input type="text"  class="form-control input-sm animalSelect"placeholder="What animal sounds interesting?"> -->
               </div>
               <button type="submit" class="btn btn-warning">Pick my animal</button>
               </form>
             </div>
           </div>
-          <div class="panel panel-info animalInfo" id="wolf">
+        </div>
+      </div>
+      <div class="row wikiInfo">
+          <!--Animal Sections -->
+          <div class="panel panel-info" id="wolf">
             <div class="panel-heading">
               <h2>Here's Info About Wolves!</h2>
             </div>
-            <div class="row">
               <div class="panel-body">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 <img src="img/wolf.jpeg" alt="">
               </div>
               <div class="panel-footer">
-                <p>Wolves are commonly misunderstood.</p>
+                <p><b>Did You Know?</b>Wolves are commonly misunderstood.They're just giant good bois.</p>
               </div>
-              <div class="panel panel-info animalInfo" id="bats">
+          </div>
+              <div class="panel panel-danger" id="bats">
                 <div class="panel-heading">
                   <h2>Here's Info About Bats!</h2>
                 </div>
                 <div class="panel-body">
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. lorem </p>
-                  <img src="img/bat.jpg" id="bat" alt="">
+                  <img src="img/bat.jpg" id="batpic" alt="">
                 </div>
                 <div class="panel-footer">
-                  <p>Something about bats!</p>
+                  <p><b>Did You Know?</b> Bats just want to be your friend.</p>
                 </div>
               </div>
-              <div class="panel panel-info animalInfo" id="sloth">
+              <div class="panel panel-info" id="sloth">
                 <div class="panel-heading">
                   <h2>Here's Info About Sloths</h2>
                 </div>
@@ -87,15 +97,17 @@
                   <img src="img/sloth.jpeg" alt="">
                 </div>
                 <div class="panel-footer">
-                  <p>Something about Sloths!</p>
+                  <p><b>Did You Know?</b> Sloths are Hilarious.</p>
                 </div>
               </div>
-            </div>
-
-
-
-          </div>
-        </div>
+              <!-- <div class="panel panel-info" id="whoops">
+                <div class="panel-heading">
+                  <h2>Whoops!</h2>
+                </div>
+                <div class="panel-body">
+                  <p>That's not one of the animals we have at the amusement park. Try asking about our wolves </p>
+                </div>
+              </div> -->
       </div>
 
       <div class="row"> <!--Amusement Park Main-->

@@ -7,25 +7,55 @@ $(document).ready(function() {
   //     console.log("Hey! you're of age to vote! But are you registered?");
   //   }
   // }
+// Voting functionality
 
-    $(".voting").submit(function(event) {
-      event.preventDefault();
+  $(".voting").submit(function(event) {
+    event.preventDefault();
 
-      var age = parseInt($("input.age").val());
+    var age = parseInt($("input.age").val());
 
-      if (age < 18) {
-        console.log("You aren't old enough!");
-        $(".voteResult p").hide();
-        $(".voteCant").show();
+    if (age < 18) {
+      console.log("You aren't old enough!");
+      $(".voteResult p").hide();
+      $(".voteCant").show();
+    } else {
+      console.log("Thanks! We'll check for you.");
+      $(".voteResult p").hide();
+      $(".voteNow").show();
+    }
 
-      } else {
-        console.log("Thanks! We'll check for you.");
-        $(".voteResult p").hide();
-        $(".voteNow").show();
-      }
       $("input.age").val("");
 
     });
 
+
+// Animal Select functionality
+
+    $("form.animal").submit(function(event) {
+      event.preventDefault();
+
+      var animalSelect = $(".animalSelect").val();
+      var value = $("#animal option:selected").val();
+
+      console.log(animalSelect);
+      console.log("the value is " + value);
+
+      if (value === "wolf") {
+        console.log("nope 1");
+        $("#bats").hide();
+        $("#sloth").hide();
+        $("#wolf").show();
+      } else if (value === "bat") {
+        console.log("nope 2");
+        $("#wolf").hide();
+        $("#sloth").hide();
+        $("#bats").show()
+      } else {
+        $("#wolf").hide();
+        $("#bats").hide();
+        $("#sloth").show();
+      }
+
+    });
 
 });

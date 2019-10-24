@@ -10,11 +10,11 @@
   display: none;
 }
 
-#bat {
+#batpic {
   width: 40%;
   height: 50%;
 }
 
-.animalInfo {
+#wolf, #bats,  #sloth, #whoops {
   display: none;
 }
