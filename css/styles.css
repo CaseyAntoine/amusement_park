@@ -9,3 +9,12 @@
 .voteCant {
   display: none;
 }
+
+#bat {
+  width: 40%;
+  height: 50%;
+}
+
+.animalInfo {
+  display: none;
+}

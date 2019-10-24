@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-  // var runAge = function() {
+  // var runAge = function(age) {
   //   if (age < 18) {
   //     console.log("Sorry you're not old enough to vote.");
   //   } else {
