@@ -34,10 +34,9 @@ $(document).ready(function() {
     $("form.animal").submit(function(event) {
       event.preventDefault();
 
-      var animalSelect = $(".animalSelect").val();
-      var value = $("#animal option:selected").val();
 
-      console.log(animalSelect);
+      var value = $("#animal option:selected").val();
+      
       console.log("the value is " + value);
 
       if (value === "wolf") {
