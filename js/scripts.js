@@ -44,16 +44,24 @@ $(document).ready(function() {
         console.log("nope 1");
         $("#bats").hide();
         $("#sloth").hide();
+        $("#whoops").hide();
         $("#wolf").show();
       } else if (value === "bat") {
         console.log("nope 2");
         $("#wolf").hide();
         $("#sloth").hide();
+        $("#whoops").hide();
         $("#bats").show()
+      } else if (value === "sloth") {
+        $("#wolf").hide();
+        $("#bats").hide();
+        $("#whoops").hide();
+        $("#sloth").show();
       } else {
         $("#wolf").hide();
         $("#bats").hide();
-        $("#sloth").show();
+        $("#sloth").hide();
+        $("#whoops").show();
       }
 
     });
