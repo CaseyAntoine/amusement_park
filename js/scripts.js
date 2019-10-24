@@ -14,10 +14,13 @@ $(document).ready(function() {
       var age = parseInt($("input.age").val());
 
       if (age < 18) {
-        console.log("Please give an age");
+        console.log("You aren't old enough!");
+        $(".voteResult p").hide();
         $(".voteCant").show();
+
       } else {
         console.log("Thanks! We'll check for you.");
+        $(".voteResult p").hide();
         $(".voteNow").show();
       }
       $("input.age").val("");
