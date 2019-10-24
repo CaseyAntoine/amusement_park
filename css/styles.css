@@ -1,0 +1,11 @@
+.voteResult {
+  margin: 20px auto;
+}
+
+.voteNow {
+  display: none;
+}
+
+.voteCant {
+  display: none;
+}
